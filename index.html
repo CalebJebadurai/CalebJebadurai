@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Caleb Jebadurai | Resume</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+            font-size: 10pt;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        ul,
+        p {
+            margin: 5px;
+            padding: 0;
+        }
+
+
+        h1 {
+            font-size: 20pt;
+        }
+
+        h2 {
+            color: darkblue;
+            font-size: 12pt;
+        }
+
+        h3 {
+            font-size: 10pt;
+        }
+
+        #main {
+            height: 100%;
+            width: 100%;
+        }
+
+        .container {
+            width: 210mm;
+            height: 297mm;
+            margin: 0 auto;
+            padding: 5mm 20mm;
+            box-sizing: border-box;
+            /* background-color: antiquewhite; */
+        }
+
+        .horizontal-flex {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .vertical-flex {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flex-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex-start {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .flex-space-between {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .flex-end {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .hr-text {
+            position: relative;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .hr-text::before {
+            content: '';
+            display: block;
+            height: 1px;
+            background-color: #ccc;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            transform: translateY(-50%);
+        }
+
+        .hr-text::after {
+            content: '';
+            display: inline-block;
+            position: relative;
+            background-color: white;
+            padding: 0 10px;
+        }
+
+        .experience-block {
+            margin-top: 10px;
+        }
+
+        .experience-item {
+            margin-bottom: 15px;
+        }
+
+        .experience-item h2 {
+            font-size: 14pt;
+            margin-bottom: 5px;
+        }
+
+        .experience-item .duration {
+            font-style: italic;
+            color: #777;
+            font-size: 8pt;
+        }
+
+        .experience-item ul {
+            list-style: disc;
+            margin-left: 20px;
+            padding-left: 0;
+        }
+
+        .accomplishment {
+            flex: 5;
+        }
+
+        .skills {
+            color: #777;
+            display: inline;
+            font-weight: 550;
+            flex: 2;
+            justify-content: flex-end;
+            text-align: end;
+        }
+
+        .vertical-flex p {
+            margin: 2px 10px 0px;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/f8e6dbf95b.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <div class="container">
+        <div id="main" class="vertical-flex flex-space-between">
+
+
+            <div class="vertical-flex">
+
+                <div class="horizontal-flex flex-center">
+                    <h1>Caleb Jebadurai</h1>
+                </div>
+
+                <div class="horizontal-flex flex-space-between">
+                    <p>Bangalore, India - 122003</p>
+                    <p>+91-7738-3939-82</p>
+                    <p>
+                        <i class='fab fa-linkedin' style='font-size:24px'></i>
+                        <i class="fa-brands fa-linkedin"  style='font-size:24px'></i>
+                        <i class="fa-brands fa-github"  style='font-size:24px'></i>
+                        <i class="fa-brands fa-square-x-twitter"></i>
+                        /calebjebadurai</p>
+                </div>
+
+
+                <div class="experience-block">
+                    <h2>Skills</h2>
+                    <div class="horizontal-flex flex-space-between">
+                        <div class="vertical-flex">
+                            <p><b>Backend:</b> Python, Django, Django Rest Framework</p>
+                            <p><b>Frontend:</b> TypeScript, JavaScript, Refine, React, Redux, HTML, CSS</p>
+                            <p><b>Others:</b> Git, Docker, Metabase, SQL</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-block">
+                    <h2>Experience</h2>
+
+                    <div class="experience-item">
+                        <h3>Juniper Networks, Bangalore, India — Software Engineer III</h3>
+                        <p class="duration">December 2022 - Present (1 Year and 9 Months)</p>
+                        <ul>
+                            <li>
+                                <div class="horizontal-flex flex-space-between">
+                                    <p class="accomplishment">Engineered a high-performance, user-centric new UI for an
+                                        internal application from
+                                        the ground up. </p>
+                                    <p class="skills">(Refine, React, Material UI, Redux)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="horizontal-flex flex-space-between">
+                                    <p class="accomplishment">Implemented scripts to generate visually appealing and
+                                        highly
+                                        interactive management
+                                        and processing systems. </p>
+                                    <p class="skills">(React, Redux, Material UI, AG-Grid)</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3>uKom, Fashinza, Gurgaon, India — Full Stack Developer</h3>
+                        <p class="duration">June 2022 - November 2022 (6 Months)</p>
+                        <ul>
+                            <li>
+                                <div class="horizontal-flex flex-space-between">
+                                    <p class="accomplishment">Developed the ukom.com landing page. </p>
+                                    <p class="skills">(React, Next, CSS)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="horizontal-flex flex-space-between">
+                                    <p class="accomplishment">Developed multiple pages and functionalities within the
+                                        main
+                                        e-commerce web
+                                        application.
+                                    </p>
+                                    <p class="skills">(React)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="horizontal-flex flex-space-between">
+                                    <p class="accomplishment">Implemented reusable CRUD operations and cart
+                                        functionality
+                                        with better state
+                                        management. </p>
+                                    <p class="skills">(React, Redux)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="horizontal-flex flex-space-between">
+                                    <p class="accomplishment">Developed multiple views/endpoints for CRUD operations.
+                                    </p>
+                                    <p class="skills">(Django, DRF)
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="horizontal-flex flex-space-between">
+                                    <p class="accomplishment">Created a script to generate custom, modular PowerPoint
+                                        presentations from catalogs.
+                                    <p class="skills">(Django, pypptx)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="horizontal-flex flex-space-between">
+                                    <p class="accomplishment">Created miscellaneous templates for PDF generation. </p>
+                                    <p class="skills">(HTML, CSS)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="horizontal-flex flex-space-between">
+                                    <p class="accomplishment">Built analytical dashboards to monitor department-wise
+                                        growth,
+                                        productivity, and
+                                        performance. </p>
+                                    <p class="skills">(Metabase)</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3>CBSE Board - Head Office, Preet Vihar — Senior Software Developer</h3>
+                        <p class="duration">October 2021 - June 2022 (8 Months)</p>
+                        <ul>
+                            <li>
+                                <div class="horizontal-flex flex-space-between">
+                                    <p class="accomplishment">Developed and maintained the Pension Management and
+                                        Processing
+                                        System.
+                                    <p class="skills">(Django, DRF, React, Redux, PostgreSQL, GCP)</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3>CBSE Board - Regional Office, Delhi West — Assistant Programmer</h3>
+                        <p class="duration">December 2019 - October 2021 (1 Year and 10 Months)</p>
+                        <ul>
+                            <li>
+                                <div class="horizontal-flex flex-space-between">
+                                    <p class="accomplishment">Developed the Marksheet Printing System. </p>
+                                    <p class="skills">(Django)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="horizontal-flex flex-space-between">
+                                    <p class="accomplishment">Created bulk customized email scripts. </p>
+                                    <p class="skills">(Python)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="horizontal-flex flex-space-between">
+                                    <p class="accomplishment">Handled miscellaneous data manipulation and organization
+                                        tasks. </p>
+                                    <p class="skills">
+                                        (SQLite, Excel)</p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3>DRDO (Delhi), E-Nose — Gas Sensor using Machine Learning - Internship</h3>
+                        <p class="duration">June 2018 - August 2018 (3 Months)</p>
+                        <ul>
+                            <li>
+                                <div class="horizontal-flex flex-space-between">
+                                    <p class="accomplishment">Utilized Principal Component Analysis to differentiate
+                                        between
+                                        four gases.
+                                    <p class="skills">(Java)</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3>DRDO (Delhi), Noise Removing through FFT and IFFT Algorithm - Internship</h3>
+                        <p class="duration">June 2017 - July 2017 (1 Month)</p>
+                        <ul>
+                            <li>
+                                <div class="horizontal-flex flex-space-between">
+                                    <p class="accomplishment">Gained experience with the FFT and IFFT algorithms for
+                                        noise
+                                        removal. </p>
+                                    <p class="skills">
+                                        (Java)</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+
+                <div class="experience-block">
+                    <h2>Education</h2>
+
+                    <div class="experience-item">
+                        <h3>Birla Institute of Technology and Science Pilani, Work Integrated Learning Program (Fully
+                            Online), Pilani, Rajasthan, India — M.Tech Data Science & Engineering</h3>
+                        <div class="horizontal-flex flex-space-between">
+                            <p class="duration">October 2021 - Present (3rd Semester)</p>
+                            <p class="duration">CGPA: 5.5/10 (52.2%)</p>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3>Sam Higginbottom University of Agriculture, Technology and Sciences, Prayagraj — B.Tech
+                            Computer Science & Engineering</h3>
+                        <div class="horizontal-flex flex-space-between">
+                            <p class="duration">July 2015 - June 2019</p>
+                            <p class="duration">CGPA: 7.6/10 (72.8%)</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="horizontal-flex flex-end">
+                <p class="duration">*As of September 2024</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
