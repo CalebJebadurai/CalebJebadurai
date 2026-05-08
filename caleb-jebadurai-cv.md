@@ -6,7 +6,7 @@ Bangalore, India · [calebjebadurai@gmail.com](mailto:calebjebadurai@gmail.com) 
 
 ## Summary
 
-Full Stack Engineer with 6+ years of experience architecting and shipping production systems using **Django**, **React/TypeScript**, and **Kubernetes**. Currently at HPE delivering enterprise-grade applications with Django REST Framework backends and large-scale React frontends deployed on K8s. Proven track record of translating complex business requirements into scalable, well-tested code that directly reduces operational cost and developer hours.
+Full Stack Engineer with 6+ years of experience architecting and shipping production systems using **Django**, **React/TypeScript**, and **Kubernetes**. Currently at HPE building enterprise applications with Django REST Framework backends and large-scale React frontends deployed on K8s. Focused on writing scalable, well-tested code that reduces operational costs and developer effort.
 
 ---
 
@@ -31,20 +31,20 @@ Full Stack Engineer with 6+ years of experience architecting and shipping produc
 ### Software Engineer III *(Juniper Networks → acquired by HPE)*
 **Hewlett Packard Enterprise** · Bangalore, India · Dec 2022 – Feb 2026
 
-- **Document Review Tracker (DRT)** — Single-handedly architected a mission-critical document lifecycle app with a **Django 5 / DRF** backend and a **React 19 / TypeScript** frontend, deployed via **Helm on Kubernetes**. Production rollout May 2026.
-- Led full platform migration from a **legacy Perl CGI / bare-metal VM** stack to a modern **Django + React + K8s** architecture with **Redis caching and React Query**, eliminating manual deployment processes and enabling continuous delivery.
+- **Document Review Tracker (DRT)** — Single-handedly architected a mission-critical document lifecycle app with a **Django 5 / DRF** backend and a **React 19 / TypeScript** frontend, deployed via **Helm on Kubernetes**. Going live May 2026.
+- Led the full platform migration from a **legacy Perl CGI / bare-metal VM** stack to a **Django + React + K8s** architecture with **Redis caching and React Query**, removing manual deployment steps and enabling continuous delivery.
 - Implemented **Celery + Redis** background task processing, Django Channels for real-time WebSocket updates, and **MSAL-based Azure AD SSO** for enterprise-wide authentication.
 - Built a full **GitLab CI/CD pipeline** with SAST, dependency scanning, container scanning, secret detection, **Semantic Release** versioning, and automated Helm deployments to K8s staging/production.
-- Established **Playwright E2E** test suites with multi-user auth and parallel workers, plus **Vitest + Testing Library** unit tests, ensuring regression-free releases across the platform.
+- Established **Playwright E2E** test suites with multi-user auth and parallel workers, plus **Vitest + Testing Library** unit tests, keeping releases regression-free.
 - **DeepThought** — Co-architecting a microservices platform using **Spring Boot 4 / Java 21** with Spring Cloud Gateway, **Drools rules engine**, RabbitMQ event-driven messaging, and a **React 19 / Refine / TanStack Query** frontend. Infrastructure managed with **Docker Compose + Kubernetes**, PostgreSQL, Redis, Elasticsearch, and Nginx.
-- Implemented **Spring Security + LDAP** enterprise authentication and **Spring Session + Redis** for distributed session management across microservices.
-- Migrated team tooling to **Biome** (Rust-based linter/formatter), achieving **65× formatting speed improvement**.
+- Implemented **Spring Security + LDAP** authentication and **Spring Session + Redis** for distributed session management across microservices.
+- Migrated team tooling to **Biome** (Rust-based linter/formatter), achieving a **65× formatting speed improvement**.
 
 ### Full Stack Developer
 **uKom (Fashinza)** · Gurgaon, India · Jun 2022 – Nov 2022
 
-- Overhauled e-commerce frontend with **Next.js and Redux**, achieving a **15% increase in organic traffic** through SSR-based SEO optimizations.
-- Integrated **Metabase BI dashboards** directly on production PostgreSQL replicas, improving executive decision-making velocity by **20×**.
+- Rebuilt the e-commerce frontend with **Next.js and Redux**, driving a **15% increase in organic traffic** through SSR-based SEO improvements.
+- Integrated **Metabase BI dashboards** on production PostgreSQL replicas, giving leadership **20× faster** access to business insights.
 
 ### Senior Software Developer
 **Central Board of Secondary Education** · Delhi, India · Oct 2021 – Jun 2022
@@ -52,8 +52,8 @@ Full Stack Engineer with 6+ years of experience architecting and shipping produc
 ### Assistant Programmer
 **Central Board of Secondary Education** · Delhi, India · Dec 2019 – Oct 2021
 
-- Architected a **Pension Management System** using **Django** on a bare-metal Linux server, handling multi-level financial workflows and achieving **4× processing efficiency**.
-- Automated certificate generation (20 → 200+/day) and built a bulk email system scaling from 500 manual emails to **30,000 programmatic dispatches** — a **1,000× operational improvement**.
+- Architected a **Pension Management System** using **Django** on a bare-metal Linux server, handling multi-level financial workflows and improving processing speed by **4×**.
+- Automated certificate generation (20 → 200+/day) and built a bulk email system scaling from 500 manual emails to **30,000 automated sends** — a **1,000× improvement**.
 
 ### Intern
 **Defence Research and Development Organisation (DRDO)** · Delhi, India · Jun 2017 – Aug 2018
@@ -67,9 +67,9 @@ Full Stack Engineer with 6+ years of experience architecting and shipping produc
 ### India Election Analysis & Prediction Platform *(Open Source)*
 [electionanalysis.in](https://electionanalysis.in) · [GitHub](https://github.com/CalebJebadurai/elec) · Apr 2026
 
-- Shipped a full-stack election analysis platform from **zero to production in 2 weeks** using **Claude Opus 4.6** and a custom **10-agent AI architecture** (architect → analyst → critic → implementer → verifier pipeline). Live at **electionanalysis.in**.
+- Architected and shipped a full-stack election analysis platform from **zero to production in 2 weeks** using **Claude Opus 4.6** and a custom **10-agent AI pipeline** (architect → analyst → critic → implementer → verifier). Live at **electionanalysis.in**.
 - Stack: **FastAPI + asyncpg + PostgreSQL** backend, **React 19 + Tailwind + Radix UI** frontend, **XGBoost → ONNX** ML prediction pipeline, **Terraform on GCP**, GitHub Actions CI.
-- Leveraged 6+ years of **Python, React, and systems architecture** experience to design the full system — data models, ML pipeline, infrastructure, and CI — directing AI agents to generate and iterate on implementation.
+- Drew on 6+ years of **Python, React, and systems architecture** experience to design the full system — data models, ML pipeline, infrastructure, and CI — directing AI agents to implement and iterate.
 
 ---
 
