@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caleb Jebadurai — Senior Full Stack Engineer</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --muted: #444;
+    --accent: #2563eb;
+    --border: #d1d5db;
+    --section-gap: 0.7rem;
+  }
+
+  @media print {
+    body { font-size: 8.5pt; background: white; }
+    .page { padding: 0; max-width: 100%; box-shadow: none; margin: 0; }
+    a { text-decoration: none; color: var(--accent); }
+    @page { margin: 0.4in 0.5in; size: A4; }
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: var(--text);
+    background: #ffffff;
+    line-height: 1.35;
+    font-size: 11.5px;
+  }
+
+  .page {
+    max-width: 700px;
+    margin: 0 auto;
+    background: var(--bg);
+    padding: 1.5rem 2rem 1.2rem;
+  }
+
+  /* ── Header ─────────────────────────────────── */
+  header { text-align: center; margin-bottom: var(--section-gap); }
+  header h1 { font-size: 1.35rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.2rem; }
+  .contact {
+    font-size: 0.78rem;
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.15rem 0.6rem;
+  }
+  .contact a { color: var(--accent); text-decoration: none; }
+
+  /* ── Sections ───────────────────────────────── */
+  section { margin-bottom: var(--section-gap); }
+  section h2 {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.15rem;
+    margin-bottom: 0.45rem;
+  }
+
+  /* ── Summary ────────────────────────────────── */
+  .summary { font-size: 0.82rem; color: var(--muted); line-height: 1.4; text-align: justify; }
+
+  /* ── Skills ─────────────────────────────────── */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 0.15rem 0.75rem;
+    font-size: 0.78rem;
+  }
+  .skills-grid dt { font-weight: 600; }
+  .skills-grid dd { color: var(--muted); }
+
+  /* ── Experience ─────────────────────────────── */
+  .role { margin-bottom: 0.6rem; }
+  .role:last-child { margin-bottom: 0; }
+  .role-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.1rem;
+  }
+  .role-title { font-weight: 600; font-size: 0.82rem; }
+  .role-meta { font-size: 0.72rem; color: var(--muted); white-space: nowrap; }
+  .role-org { font-size: 0.75rem; color: var(--muted); margin-bottom: 0.2rem; }
+  .role ul {
+    margin-left: 1rem;
+    font-size: 0.78rem;
+    color: #333;
+    text-align: justify;
+  }
+  .role li { margin-bottom: 0.1rem; }
+  .role li::marker { color: var(--accent); }
+
+  .tag {
+    display: inline-block;
+    font-size: 0.62rem;
+    background: #eff6ff;
+    color: var(--accent);
+    padding: 0.05rem 0.3rem;
+    border-radius: 2px;
+    font-weight: 500;
+    margin-left: 0.2rem;
+    vertical-align: middle;
+  }
+
+  /* ── Education ──────────────────────────────── */
+  .edu-item { margin-bottom: 0.25rem; }
+  .edu-item:last-child { margin-bottom: 0; }
+  .edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  .edu-degree { font-weight: 600; font-size: 0.78rem; }
+  .edu-date { font-size: 0.72rem; color: var(--muted); }
+  .edu-school { font-size: 0.72rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- ═══ HEADER ════════════════════════════════════════════ -->
+<header>
+  <h1>Caleb Jebadurai Nickson</h1>
+  <div class="contact">
+    <span>Bangalore, India</span>
+    <a href="mailto:calebjebadurai@gmail.com">calebjebadurai@gmail.com</a>
+    <span>+91 7738393982</span>
+    <a href="https://linkedin.com/in/calebjebadurai" target="_blank">linkedin.com/in/calebjebadurai</a>
+  </div>
+</header>
+
+<!-- ═══ SUMMARY ══════════════════════════════════════════ -->
+<section>
+  <h2>Summary</h2>
+  <p class="summary">
+    Full Stack Engineer with 6+ years of experience architecting and shipping production systems using
+    <strong>Django</strong>, <strong>React/TypeScript</strong>, and <strong>Kubernetes</strong>.
+    Currently at HPE delivering enterprise-grade applications with Django REST Framework backends and
+    large-scale React frontends deployed on K8s. Proven track record of translating complex business
+    requirements into scalable, well-tested code that directly reduces operational cost and developer hours.
+  </p>
+</section>
+
+<!-- ═══ SKILLS ════════════════════════════════════════════ -->
+<section>
+  <h2>Technical Skills</h2>
+  <dl class="skills-grid">
+    <dt>Frontend</dt>
+    <dd><strong>React 19</strong>, <strong>TypeScript 6</strong>, Redux Toolkit, Refine, MUI, Vite, Bun, Playwright, Vitest</dd>
+
+    <dt>Backend</dt>
+    <dd><strong>Django 5</strong>, <strong>Django REST Framework</strong>, Celery, Redis, Channels (WebSocket), FastAPI, Spring Boot 4</dd>
+
+    <dt>Databases</dt>
+    <dd><strong>PostgreSQL</strong>, Redis, Elasticsearch</dd>
+
+    <dt>Infrastructure</dt>
+    <dd><strong>Kubernetes</strong>, <strong>Helm</strong>, <strong>Docker</strong>, GitLab CI/CD, GitHub Actions, Nginx, Terraform (GCP)</dd>
+
+    <dt>Testing</dt>
+    <dd>Playwright E2E, Vitest, Testing Library, pytest, JUnit 5, Testcontainers</dd>
+
+    <dt>Other</dt>
+    <dd>Python, Java 21, Biome, Semantic Release, Sentry, MSAL/Azure AD SSO, Git</dd>
+  </dl>
+</section>
+
+<!-- ═══ EXPERIENCE ════════════════════════════════════════ -->
+<section>
+  <h2>Professional Experience</h2>
+
+  <!-- ── HPE ────────────────────────────────────────────── -->
+  <div class="role">
+    <div class="role-header">
+      <span class="role-title">Software Engineer II</span>
+      <span class="role-meta">Feb 2026 – Present</span>
+    </div>
+    <div class="role-header" style="margin-bottom: 0.1rem;">
+      <span class="role-title">Software Engineer III <span class="tag">Juniper Networks → acquired by HPE</span></span>
+      <span class="role-meta">Dec 2022 – Feb 2026</span>
+    </div>
+    <div class="role-org">Hewlett Packard Enterprise · Bangalore, India</div>
+    <ul>
+      <!-- DRT -->
+      <li><strong>Document Review Tracker (DRT)</strong> — Single-handedly architected a mission-critical document lifecycle app
+          with a <strong>Django 5 / DRF</strong> backend and a <strong>React 19 / TypeScript</strong> frontend,
+          deployed via <strong>Helm on Kubernetes</strong>. Production rollout May 2026.</li>
+      <li>Led full platform migration from a <strong>legacy Perl CGI / bare-metal VM</strong> stack to a modern
+          <strong>Django + React + K8s</strong> architecture with <strong>Redis caching and React Query</strong>,
+          eliminating manual deployment processes and enabling continuous delivery.</li>
+      <li>Implemented <strong>Celery + Redis</strong> background task processing, Django Channels for real-time WebSocket updates,
+          and <strong>MSAL-based Azure AD SSO</strong> for enterprise-wide authentication.</li>
+      <li>Built a full <strong>GitLab CI/CD pipeline</strong> with SAST, dependency scanning, container scanning,
+          secret detection, <strong>Semantic Release</strong> versioning, and automated Helm deployments to K8s staging/production.</li>
+      <li>Established <strong>Playwright E2E</strong> test suites with multi-user auth and parallel workers,
+          plus <strong>Vitest + Testing Library</strong> unit tests, ensuring regression-free releases across the platform.</li>
+
+      <!-- DeepThought -->
+      <li><strong>DeepThought</strong> — Co-architecting a microservices platform using <strong>Spring Boot 4 / Java 21</strong>
+          with Spring Cloud Gateway, <strong>Drools rules engine</strong>, RabbitMQ event-driven messaging,
+          and a <strong>React 19 / Refine / TanStack Query</strong> frontend.
+          Infrastructure managed with <strong>Docker Compose + Kubernetes</strong>, PostgreSQL, Redis, Elasticsearch, and Nginx.</li>
+      <li>Implemented <strong>Spring Security + LDAP</strong> enterprise authentication and
+          <strong>Spring Session + Redis</strong> for distributed session management across microservices.</li>
+      <li>Migrated team tooling to <strong>Biome</strong> (Rust-based linter/formatter), achieving <strong>65× formatting speed improvement</strong>.</li>
+    </ul>
+  </div>
+
+  <!-- ── uKom / Fashinza ────────────────────────────────── -->
+  <div class="role">
+    <div class="role-header">
+      <span class="role-title">Full Stack Developer</span>
+      <span class="role-meta">Jun 2022 – Nov 2022</span>
+    </div>
+    <div class="role-org">uKom (Fashinza) · Gurgaon, India</div>
+    <ul>
+      <li>Overhauled e-commerce frontend with <strong>Next.js and Redux</strong>, achieving a <strong>15% increase in organic traffic</strong>
+          through SSR-based SEO optimizations.</li>
+      <li>Integrated <strong>Metabase BI dashboards</strong> directly on production PostgreSQL replicas,
+          improving executive decision-making velocity by <strong>20×</strong>.</li>
+    </ul>
+  </div>
+
+  <!-- ── CBSE ───────────────────────────────────────────── -->
+  <div class="role">
+    <div class="role-header">
+      <span class="role-title">Senior Software Developer</span>
+      <span class="role-meta">Oct 2021 – Jun 2022</span>
+    </div>
+    <div class="role-header" style="margin-bottom: 0.1rem;">
+      <span class="role-title">Assistant Programmer</span>
+      <span class="role-meta">Dec 2019 – Oct 2021</span>
+    </div>
+    <div class="role-org">Central Board of Secondary Education · Delhi, India</div>
+    <ul>
+      <li>Architected a <strong>Pension Management System</strong> using <strong>Django</strong> on a bare-metal Linux server,
+          handling multi-level financial workflows and achieving <strong>4× processing efficiency</strong>.</li>
+      <li>Automated certificate generation (20 → 200+/day) and built a bulk email system
+          scaling from 500 manual emails to <strong>30,000 programmatic dispatches</strong> — a <strong>1,000× operational improvement</strong>.</li>
+    </ul>
+  </div>
+
+  <!-- ── DRDO ───────────────────────────────────────────── -->
+  <div class="role">
+    <div class="role-header">
+      <span class="role-title">Intern</span>
+      <span class="role-meta">Jun 2017 – Aug 2018</span>
+    </div>
+    <div class="role-org">Defence Research and Development Organisation (DRDO) · Delhi, India</div>
+    <ul>
+      <li>Built ML-based gas sensor classification (E-Nose) using PCA in Python, and implemented
+          noise-removal pipelines using FFT/IFFT algorithms in Python and C.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══ PROJECTS ══════════════════════════════════════════ -->
+<section>
+  <h2>Projects</h2>
+  <div class="role">
+    <div class="role-header">
+      <span class="role-title">India Election Analysis &amp; Prediction Platform <span class="tag">Open Source</span></span>
+      <span class="role-meta"><a href="https://electionanalysis.in">electionanalysis.in</a> · <a href="https://github.com/CalebJebadurai/elec">GitHub</a> · Apr 2026</span>
+    </div>
+    <ul>
+      <li>Shipped a full-stack election analysis platform from <strong>zero to production in 2 weeks</strong> using
+          <strong>Claude Opus 4.6</strong> and a custom <strong>10-agent AI architecture</strong>
+          (architect → analyst → critic → implementer → verifier pipeline). Live at <strong>electionanalysis.in</strong>.</li>
+      <li>Stack: <strong>FastAPI + asyncpg + PostgreSQL</strong> backend, <strong>React 19 + Tailwind + Radix UI</strong> frontend,
+          <strong>XGBoost → ONNX</strong> ML prediction pipeline, <strong>Terraform on GCP</strong>, GitHub Actions CI.</li>
+      <li>Leveraged 6+ years of <strong>Python, React, and systems architecture</strong> experience to design the
+          full system — data models, ML pipeline, infrastructure, and CI — directing AI agents to generate and iterate on implementation.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══ EDUCATION ═════════════════════════════════════════ -->
+<section>
+  <h2>Education</h2>
+  <div class="edu-item">
+    <div class="edu-header">
+      <span class="edu-degree">M.Tech, Data Science &amp; Engineering</span>
+      <span class="edu-date">Oct 2021 – Jul 2025</span>
+    </div>
+    <div class="edu-school">Birla Institute of Technology and Science, Pilani (WILP)</div>
+  </div>
+  <div class="edu-item">
+    <div class="edu-header">
+      <span class="edu-degree">B.Tech, Computer Science &amp; Engineering</span>
+      <span class="edu-date">Jul 2015 – Jun 2019</span>
+    </div>
+    <div class="edu-school">Sam Higginbottom University of Agriculture, Technology and Sciences, Prayagraj</div>
+  </div>
+</section>
+
+</div>
+</body>
+</html>
