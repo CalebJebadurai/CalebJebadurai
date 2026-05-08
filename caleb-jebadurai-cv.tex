@@ -1,0 +1,129 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[margin=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% ── Colors ──────────────────────────────────────────────
+\definecolor{accent}{HTML}{2563EB}
+\definecolor{muted}{HTML}{444444}
+
+% ── Hyperlinks ──────────────────────────────────────────
+\hypersetup{colorlinks=true, linkcolor=accent, urlcolor=accent}
+
+% ── Section formatting ──────────────────────────────────
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{0.6em}{0.4em}
+
+% ── List formatting ────────────────────────────────────
+\setlist[itemize]{nosep, left=1em, label=\textbullet}
+
+% ── No page numbers ────────────────────────────────────
+\pagestyle{empty}
+
+\begin{document}
+
+% ═══ HEADER ══════════════════════════════════════════════
+\begin{center}
+  {\LARGE\bfseries Caleb Jebadurai Nickson} \\[0.3em]
+  {\color{muted} Bangalore, India \quad
+  \href{mailto:calebjebadurai@gmail.com}{calebjebadurai@gmail.com} \quad
+  +91\,7738393982 \quad
+  \href{https://linkedin.com/in/calebjebadurai}{linkedin.com/in/calebjebadurai}}
+\end{center}
+
+% ═══ SUMMARY ═════════════════════════════════════════════
+\section{Summary}
+Full Stack Engineer with 6+ years of experience architecting and shipping production systems using
+\textbf{Django}, \textbf{React/TypeScript}, and \textbf{Kubernetes}.
+Currently at HPE delivering enterprise-grade applications with Django REST Framework backends and
+large-scale React frontends deployed on K8s. Proven track record of translating complex business
+requirements into scalable, well-tested code that directly reduces operational cost and developer hours.
+
+% ═══ SKILLS ══════════════════════════════════════════════
+\section{Technical Skills}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+  \textbf{Frontend}       & \textbf{React 19}, \textbf{TypeScript 6}, Redux Toolkit, Refine, MUI, Vite, Bun, Playwright, Vitest \\
+  \textbf{Backend}        & \textbf{Django 5}, \textbf{Django REST Framework}, Celery, Redis, Channels (WebSocket), FastAPI, Spring Boot 4 \\
+  \textbf{Databases}      & \textbf{PostgreSQL}, Redis, Elasticsearch \\
+  \textbf{Infrastructure} & \textbf{Kubernetes}, \textbf{Helm}, \textbf{Docker}, GitLab CI/CD, GitHub Actions, Nginx, Terraform (GCP) \\
+  \textbf{Testing}        & Playwright E2E, Vitest, Testing Library, pytest, JUnit 5, Testcontainers \\
+  \textbf{Other}          & Python, Java 21, Biome, Semantic Release, Sentry, MSAL/Azure AD SSO, Git \\
+\end{tabularx}
+
+% ═══ EXPERIENCE ══════════════════════════════════════════
+\section{Professional Experience}
+
+% ── HPE ──────────────────────────────────────────────────
+\noindent\textbf{Software Engineer II} \hfill Feb 2026 -- Present \\
+\textbf{Software Engineer III} \textit{(Juniper Networks $\to$ acquired by HPE)} \hfill Dec 2022 -- Feb 2026 \\
+{\color{muted} Hewlett Packard Enterprise \,$\cdot$\, Bangalore, India}
+\begin{itemize}
+  \item \textbf{Document Review Tracker (DRT)} --- Single-handedly architected a mission-critical document lifecycle app with a \textbf{Django 5 / DRF} backend and a \textbf{React 19 / TypeScript} frontend, deployed via \textbf{Helm on Kubernetes}. Production rollout May 2026.
+  \item Led full platform migration from a \textbf{legacy Perl CGI / bare-metal VM} stack to a modern \textbf{Django + React + K8s} architecture with \textbf{Redis caching and React Query}, eliminating manual deployment processes and enabling continuous delivery.
+  \item Implemented \textbf{Celery + Redis} background task processing, Django Channels for real-time WebSocket updates, and \textbf{MSAL-based Azure AD SSO} for enterprise-wide authentication.
+  \item Built a full \textbf{GitLab CI/CD pipeline} with SAST, dependency scanning, container scanning, secret detection, \textbf{Semantic Release} versioning, and automated Helm deployments to K8s staging/production.
+  \item Established \textbf{Playwright E2E} test suites with multi-user auth and parallel workers, plus \textbf{Vitest + Testing Library} unit tests, ensuring regression-free releases across the platform.
+  \item \textbf{DeepThought} --- Co-architecting a microservices platform using \textbf{Spring Boot 4 / Java 21} with Spring Cloud Gateway, \textbf{Drools rules engine}, RabbitMQ event-driven messaging, and a \textbf{React 19 / Refine / TanStack Query} frontend. Infrastructure managed with \textbf{Docker Compose + Kubernetes}, PostgreSQL, Redis, Elasticsearch, and Nginx.
+  \item Implemented \textbf{Spring Security + LDAP} enterprise authentication and \textbf{Spring Session + Redis} for distributed session management across microservices.
+  \item Migrated team tooling to \textbf{Biome} (Rust-based linter/formatter), achieving \textbf{65$\times$ formatting speed improvement}.
+\end{itemize}
+
+\medskip
+
+% ── uKom / Fashinza ─────────────────────────────────────
+\noindent\textbf{Full Stack Developer} \hfill Jun 2022 -- Nov 2022 \\
+{\color{muted} uKom (Fashinza) \,$\cdot$\, Gurgaon, India}
+\begin{itemize}
+  \item Overhauled e-commerce frontend with \textbf{Next.js and Redux}, achieving a \textbf{15\% increase in organic traffic} through SSR-based SEO optimizations.
+  \item Integrated \textbf{Metabase BI dashboards} directly on production PostgreSQL replicas, improving executive decision-making velocity by \textbf{20$\times$}.
+\end{itemize}
+
+\medskip
+
+% ── CBSE ─────────────────────────────────────────────────
+\noindent\textbf{Senior Software Developer} \hfill Oct 2021 -- Jun 2022 \\
+\textbf{Assistant Programmer} \hfill Dec 2019 -- Oct 2021 \\
+{\color{muted} Central Board of Secondary Education \,$\cdot$\, Delhi, India}
+\begin{itemize}
+  \item Architected a \textbf{Pension Management System} using \textbf{Django} on a bare-metal Linux server, handling multi-level financial workflows and achieving \textbf{4$\times$ processing efficiency}.
+  \item Automated certificate generation (20 $\to$ 200+/day) and built a bulk email system scaling from 500 manual emails to \textbf{30,000 programmatic dispatches} --- a \textbf{1,000$\times$ operational improvement}.
+\end{itemize}
+
+\medskip
+
+% ── DRDO ─────────────────────────────────────────────────
+\noindent\textbf{Intern} \hfill Jun 2017 -- Aug 2018 \\
+{\color{muted} Defence Research and Development Organisation (DRDO) \,$\cdot$\, Delhi, India}
+\begin{itemize}
+  \item Built ML-based gas sensor classification (E-Nose) using PCA in Python, and implemented noise-removal pipelines using FFT/IFFT algorithms in Python and C.
+\end{itemize}
+
+% ═══ PROJECTS ════════════════════════════════════════════
+\section{Projects}
+
+\noindent\textbf{India Election Analysis \& Prediction Platform} \textit{(Open Source)} \hfill Apr 2026 \\
+{\color{muted} \href{https://electionanalysis.in}{electionanalysis.in} \,$\cdot$\, \href{https://github.com/CalebJebadurai/elec}{GitHub}}
+\begin{itemize}
+  \item Shipped a full-stack election analysis platform from \textbf{zero to production in 2 weeks} using \textbf{Claude Opus 4.6} and a custom \textbf{10-agent AI architecture} (architect $\to$ analyst $\to$ critic $\to$ implementer $\to$ verifier pipeline). Live at \textbf{electionanalysis.in}.
+  \item Stack: \textbf{FastAPI + asyncpg + PostgreSQL} backend, \textbf{React 19 + Tailwind + Radix UI} frontend, \textbf{XGBoost $\to$ ONNX} ML prediction pipeline, \textbf{Terraform on GCP}, GitHub Actions CI.
+  \item Leveraged 6+ years of \textbf{Python, React, and systems architecture} experience to design the full system --- data models, ML pipeline, infrastructure, and CI --- directing AI agents to generate and iterate on implementation.
+\end{itemize}
+
+% ═══ EDUCATION ═══════════════════════════════════════════
+\section{Education}
+
+\noindent\textbf{M.Tech, Data Science \& Engineering} \hfill Oct 2021 -- Jul 2025 \\
+{\color{muted} Birla Institute of Technology and Science, Pilani (WILP)}
+
+\medskip
+
+\noindent\textbf{B.Tech, Computer Science \& Engineering} \hfill Jul 2015 -- Jun 2019 \\
+{\color{muted} Sam Higginbottom University of Agriculture, Technology and Sciences, Prayagraj}
+
+\end{document}
